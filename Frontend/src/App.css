@@ -28,10 +28,12 @@ main .right{
 
 } 
 
-main .left{
+main .left {
   background-color: #000000;
   position: relative;
-  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 main .right{
   background-color: #343434;
@@ -51,7 +53,6 @@ main .left .review{
   cursor: pointer;
   user-select: none;
   border-radius: 0.7rem;
-  overflow: auto;
 
 }
 .left .code,
@@ -64,4 +65,10 @@ main .left .review{
   border-radius: 0.7rem;
   background-color: #101010;
 
+}
+
+.left .code{
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;  
 }
