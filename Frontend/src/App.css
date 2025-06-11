@@ -31,7 +31,6 @@ main .right{
 main .left{
   background-color: #000000;
   position: relative;
-  overflow: auto;
 }
 main .right{
   background-color: #343434;
@@ -51,6 +50,7 @@ main .left .review{
   cursor: pointer;
   user-select: none;
   border-radius: 0.7rem;
+  overflow: auto;
 
 }
 .left .code,
