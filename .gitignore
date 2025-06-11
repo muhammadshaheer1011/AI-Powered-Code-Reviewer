@@ -1,0 +1,6 @@
+Frontend/.env
+Frontend/.env.local
+Frontend/.env.*.local
+Backend/.env
+Backend/.env.local
+Backend/.env.*.local
