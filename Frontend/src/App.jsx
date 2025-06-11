@@ -19,8 +19,8 @@ function App() {
   },[])
   const [review, setReview] = useState('')
   async function reviewCode(){
-    const response=await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEUR}/ai/get-review`,{code})
-    console.log('API URL:', import.meta.env.VITE_REACT_APP_BACKEND_BASEUR)
+    const response=await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/ai/get-review`,{code})
+    console.log('API URL:', import.meta.env.VITE_REACT_APP_BACKEND_BASEURL)
     setReview(response.data)
   }
 
